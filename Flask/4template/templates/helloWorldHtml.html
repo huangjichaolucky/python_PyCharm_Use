@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>helloworld HTML</title>
+</head>
+<body>
+    这是第一个HTML文件
+
+{#  最外层是一个 字典， username、sex、age 都是他的键， person是个对象
+tempDic 是个字典#}
+
+    <p>username = {{ username }}</p>
+    <p>sex =      {{ sex }}</p>
+    <p>age =      {{ age }}</p>
+
+    {#    访问对象的属性，通过.语法即可#}
+    <p>person.name = {{ person.name }}</p>
+    <p>person.sex = {{ person.sex }}</p>
+
+    {#访问字典时，通过点语法 取到 键对应的值 #}
+    <p>tempDic.t1 = {{ tempDic.t1 }}</p>
+    <p>tempDic.t2 = {{ tempDic.t2 }}</p>
+
+</body>
+</html>
