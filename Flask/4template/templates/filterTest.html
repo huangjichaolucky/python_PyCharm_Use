@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter Test过滤器</title>
+</head>
+<body>
+    {#过滤器， 默认过滤器， 若传递avatar参数，则显示avatar参数的值，否则显示 default 后面的值#}
+    <img src="{{ avatar|default('http://box.bdimg.com/\
+    static/fisp_static/common/img/searchbox/logo_news_276_88_1f9876a.png') }}">
+
+
+{#    length标签#}
+    <p>评论数: {{ books|length }}</p>
+    {% for foo in books %}
+        <li>
+            <a href="#">{{ foo.name }}</a>
+            <a >{{foo.author}}</a>
+        </li>
+    {% endfor %}
+
+</body>
+</html>

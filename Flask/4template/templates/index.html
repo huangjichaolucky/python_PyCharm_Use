@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+{#    2加载外部的css 文件#}
+    <link rel="stylesheet" href="{{ url_for('static',
+     filename='css/index.css') }}">
+
+{#   3 用JS显示一个警告框#}
+    <script src="{{ url_for('static', filename='js/alert.js') }}"></script>
+    
+</head>
+<body>
+{#1 利用反转，将视图函数转成对应的URL，点击登陆按钮
+即可跳到对应的页面#}
+    <a href="{{ url_for('login') }}">登陆</a>
+
+{#    4加载一个图片#}
+    <img src="{{ url_for('static',
+    filename='image/3885730_124701000519_2.jpg') }}">
+
+</body>
+</html>

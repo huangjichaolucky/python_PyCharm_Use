@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titleBlcok %} {% endblock %}
+    </title>
+</head>
+<body>
+    <p>这是基类页面</p>
+    <li> 首页</li>
+    <li> 问答中心</li>
+
+{#    父模板中生命block，子模板去自己实现#}
+    {% block main %}
+
+    {% endblock %}
+
+</body>
+</html>

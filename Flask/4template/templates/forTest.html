@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for test</title>
+</head>
+<body>
+    {#5 使用for循环遍历#}
+
+    {#    遍历一个字典#}
+    {% for foo in booksDic %}
+        <p> {{ foo }}</p>
+    {% endfor %}
+
+    {#    遍历一个数组#}
+    {% for foo in array %}
+        <p>{{ foo }}</p>
+    {% endfor %}
+
+</body>
+</html>
