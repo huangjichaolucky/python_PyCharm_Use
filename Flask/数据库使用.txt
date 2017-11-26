@@ -1,0 +1,69 @@
+###Mysql 安装 python 中间件   mysql-python
+1 安装'sudo pip install mysql-python'
+
+###Flask -SQLAlchemy 介绍 和安装
+1. ORM 模型关系映射， 作用 操作数据库和操作对象一样，非常方便，即 一个表抽象成一个类，一条数据抽象成该类的一个对象
+2. Flask -SQLAlchemy  是一套 ORM框架
+3. 安装 Flask -SQLAlchemy： 'sudo pip install flask-sqlalchemy'
+
+### flask-sqlachemy
+1. 使用。flask-sqlachemy初始化
+1. 模型需要继承自`db.Model`，然后需要映射到表中的属性，必须写成`db.Column`的数据类型。
+2. 数据类型：
+    * `db.Integer`代表的是整形.
+    * `db.String`代表的是`varchar`，需要指定最长的长度。
+    * `db.Text`代表的是`text`。
+3. 其他参数：
+    * `primary_key`：代表的是将这个字段设置为主键。
+    * `autoincrement`：代表的是这个主键为自增长的。
+    * `nullable`：代表的是这个字段是否可以为空，默认可以为空，可以将这个值设置为`False`，在数据库中，这个值就不能为空了。
+4. 最后需要调用`db.create_all`来将模型真正的创建到数据库中。
+
+####mysql
+1. 创建表 create database [name] charset utf8
+2. use [datademo];  使用某个数据库
+3. 查看表 show tables；
+4. desc article;查看数据控中的某个表
+
+###flask-sqlachemy数据库增删改查操作
+1. 增
+	* 创建对象
+	* 添加到任务中
+	* 执行提交
+
+2. 查
+3. 改
+	* 找
+	* 改
+	* 提价
+4. 删
+	*  找
+	*  删
+	*提交
+
+
+
+查看某个表的结构 show create table `user`;   
+		desc `user`
+
+#### 多对多关系
+
+### Flask-Script的介绍与安装：
+* 没看明白具体有什么用处
+
+
+### 分开`models`以及解决循环引用：
+
+
+### Flask-Migrate的介绍与安装：
+
+1. 启动虚拟环境  source pythonVirtualenv/flask_env/bin/activate，  source + 路径
+
+
+### 数据库的迁移
+1. python manager.py db init
+2. python manager.py db upgrade
+3. python manager.py db migrate
+
+
+
